@@ -1,13 +1,22 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import {View, Text} from 'react-native';
+import Home from './Src/Pages/Home';
+import Carrinho from './Src/Pages/Carrinho';
 
-function App() {
+
+export default function App() {
+
+  const Tab = createBottomTabNavigator();
+
   return (
-        <View>
-          <Text>Hello World</Text>
-        </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="home" component={Home} />
+        <Tab.Screen name="carrinho" component={Carrinho} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
-
-export default App;

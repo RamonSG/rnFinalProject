@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import './style.css';
+import './style.js';
 
 function Carrinho(){
     return (
