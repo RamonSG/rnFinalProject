@@ -15,9 +15,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="login" component={Login} />
-        <Tab.Screen name="home" component={Home} />
-        <Tab.Screen name="carrinho" component={Carrinho} />
+        <Tab.Screen name="Login" component={Login} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Carrinho" component={Carrinho} />
       </Tab.Navigator>
     </NavigationContainer>
   );
