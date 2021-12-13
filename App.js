@@ -14,10 +14,22 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Login" component={Login} />
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Carrinho" component={Carrinho} />
+      <Tab.Navigator initialRouteName= "Login">
+        <Tab.Screen
+          options={{ headerShown: false }}
+          name="Login"
+          component={Login} 
+        />
+        <Tab.Screen 
+          options={{ headerShown: false }}
+          name="Home" 
+          component={Home} 
+        />
+        <Tab.Screen 
+          options={{ headerShown: false }}
+          name="Carrinho" 
+          component={Carrinho} 
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
