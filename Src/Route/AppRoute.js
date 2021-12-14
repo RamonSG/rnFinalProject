@@ -11,11 +11,6 @@ const Tab = createBottomTabNavigator();
 const AppRoute = () => {
     return(
       <Tab.Navigator initialRouteName= "Login">
-        <Tab.Screen
-          options={{ headerShown: false }}
-          name="Login"
-          component={Login} 
-        />
         <Tab.Screen 
           options={{ headerShown: false }}
           name="Home" 

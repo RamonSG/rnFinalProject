@@ -1,17 +1,18 @@
 import React from "react";
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from "../Pages/Login";
+import Home from "../Pages/Home";
 
-const AppStack = createNativeStackNavigator();
+const AuthStack = createNativeStackNavigator();
 
 const AuthRoute = () => {
     return(
-    <AppStack.Navigator
+    <AuthStack.Navigator
     screenOptions = {{
         headerShown: false,
     }}>
-    <AppStack.Screen name ="Login" component={Login}/>
-    </AppStack.Navigator>
+    <AuthStack.Screen name ="Login" component={Login}/>
+    </AuthStack.Navigator>
     );
 }
 

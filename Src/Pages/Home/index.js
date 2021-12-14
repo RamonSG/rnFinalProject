@@ -2,7 +2,7 @@
 import React from 'react';
 import {View, Text, FlatList, Image} from 'react-native';
 import Header from '../../Components/Header/Header.js';
-import Produtos from '../../Api/DB/Produtos.json';
+import * as Produtos from '../../Api/DB/Produtos.json';
 
 import style from './style.js';
 
