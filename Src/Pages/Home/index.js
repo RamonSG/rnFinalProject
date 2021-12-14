@@ -1,18 +1,24 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, FlatList, Image} from 'react-native';
 import Header from '../../Components/Header/Header.js';
+import Produtos from '../../Api/DB/Produtos.json';
 
 import style from './style.js';
 
 function Home(){
+
     return (
         <View style= {style.container}>
             <Header/>
             <View style= {style.body}>
-                <Text>Hello</Text>
-                <Text>Hello</Text>
-                <Text>Hello</Text>
+                <FlatList
+                    data={Produtos}
+                    renderItem={({item}) => (
+                        <Image>{item.fotoLink}</Image>)}
+                    numColumns={3}
+                    keyExtractor={(item) => item.id}
+                />
             </View>
         </View>
     );
